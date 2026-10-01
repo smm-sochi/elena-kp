@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Персональное предложение для Елены | ONETAKE MEDIA</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Unbounded:wght@600;800;900&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Unbounded', 'sans-serif'],
+          },
+          colors: {
+            dark: '#08090C',
+            card: '#10121A',
+            cardBorder: '#1E2230',
+            lime: {
+              400: '#CCFF00',
+              500: '#B8E600',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glow-lime {
+      box-shadow: 0 0 35px -5px rgba(204, 255, 0, 0.35);
+    }
+    .text-glow {
+      text-shadow: 0 0 20px rgba(204, 255, 0, 0.4);
+    }
+    
+    /* Стили для идеального сохранения в PDF (Печать) */
+    @media print {
+      body {
+        background-color: #08090C !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      .card-avoid-break {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-dark text-slate-100 font-sans antialiased selection:bg-lime-400 selection:text-black">
+
+  <!-- ================= ХЕДЕР ================= -->
+  <header class="w-full bg-dark/90 backdrop-blur-md border-b border-cardBorder py-6 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+      <div class="font-display font-black text-lg tracking-wider flex items-center gap-2">
+        <span class="w-3 h-3 rounded-full bg-lime-400 animate-pulse"></span>
+        ONETAKE<span class="text-lime-400">.MEDIA</span>
+      </div>
+      <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 border border-cardBorder px-4 py-1.5 rounded-full bg-card">
+        Персональное предложение для Елены
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-12 space-y-24">
+
+    <!-- ================= 1. HERO СЕКЦИЯ ================= -->
+    <section class="text-center relative pt-8 pb-4">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[350px] bg-lime-400/10 rounded-full blur-[130px] pointer-events-none"></div>
+
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-card border border-cardBorder text-xs text-lime-400 font-semibold mb-6">
+        <i data-lucide="sparkles" class="w-4 h-4"></i>
+        ПРОДЮСИРОВАНИЕ ЛИЧНОГО БРЕНДА • НЕДВИЖИМОСТЬ
+      </div>
+
+      <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight leading-[1.15] mb-6">
+        Система продаж и проявленности <br class="hidden sm:inline" />
+        <span class="text-lime-400 text-glow">Ярославль • Москва</span>
+      </h1>
+
+      <p class="max-w-3xl mx-auto text-slate-300 text-base sm:text-lg leading-relaxed mb-8">
+        Здравствуйте, Елена! Этот план разработан на основе нашего диалога. Мы упаковываем ваш масштаб, жизненный опыт инвестора и экспертность в кинематографичный контент, который привлекает платежеспособных клиентов без шаблонного SMM.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto pt-6 border-t border-cardBorder">
+        <div class="p-4 bg-card/60 border border-cardBorder rounded-2xl">
+          <div class="text-lime-400 font-display font-bold text-xl mb-1">01. Охваты</div>
+          <div class="text-xs text-slate-400">Виральные короткие Reels до 7–20 сек</div>
+        </div>
+        <div class="p-4 bg-card/60 border border-cardBorder rounded-2xl">
+          <div class="text-lime-400 font-display font-bold text-xl mb-1">02. Доверие</div>
+          <div class="text-xs text-slate-400">Проявленность личности и опыта инвестора</div>
+        </div>
+        <div class="p-4 bg-card/60 border border-cardBorder rounded-2xl">
+          <div class="text-lime-400 font-display font-bold text-xl mb-1">03. Лиды</div>
+          <div class="text-xs text-slate-400">Продажи квартир в Москве и домов в Ярославле</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. СТРАТЕГИЧЕСКОЕ ПОЗИЦИОНИРОВАНИЕ ================= -->
+    <section class="card-avoid-break bg-card/40 border border-cardBorder rounded-3xl p-8 sm:p-12">
+      <div class="max-w-2xl mb-10">
+        <span class="text-lime-400 font-semibold text-xs tracking-wider uppercase">Фундамент контента</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-bold uppercase mt-2">3 Ключевых вектора позиционирования</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Вектор 1 -->
+        <div class="bg-card border border-cardBorder rounded-2xl p-6">
+          <div class="w-10 h-10 rounded-xl bg-lime-400/10 text-lime-400 flex items-center justify-center mb-4 font-display font-bold">
+            01
+          </div>
+          <h3 class="font-display font-bold text-base mb-2">Мост «Ярославль ➔ Москва»</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Покупка ликвидного жилья в Москве для молодежи и студентов (студии у парков вроде Сокольников за ~12 млн ₽) + сохранение капитала инвесторов.
+          </p>
+        </div>
+
+        <!-- Вектор 2 -->
+        <div class="bg-card border border-cardBorder rounded-2xl p-6">
+          <div class="w-10 h-10 rounded-xl bg-lime-400/10 text-lime-400 flex items-center justify-center mb-4 font-display font-bold">
+            02
+          </div>
+          <h3 class="font-display font-bold text-base mb-2">Загородная недвижимость</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Продажа качественных домов и участков в Ярославле через сторителлинг с душой (включая дом друзей-музыкантов, переезжающих в Германию).
+          </p>
+        </div>
+
+        <!-- Вектор 3 -->
+        <div class="bg-card border border-cardBorder rounded-2xl p-6">
+          <div class="w-10 h-10 rounded-xl bg-lime-400/10 text-lime-400 flex items-center justify-center mb-4 font-display font-bold">
+            03
+          </div>
+          <h3 class="font-display font-bold text-base mb-2">Масштаб личности Елены</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Опыт инвестора (капитал по разным корзинам, выход из кризисов), психология выбора жилья, путешествия и жизнь в удовольствие без фальши.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. ТАРИФНАЯ СЕТКА ================= -->
+    <section class="space-y-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-lime-400 font-semibold text-xs tracking-wider uppercase">Форматы работы</span>
+        <h2 class="font-display text-2xl sm:text-4xl font-bold uppercase mt-2">Пакеты сотрудничества</h2>
+        <p class="text-slate-400 text-sm mt-2">Пошаговая система: от быстрого набора охватов до полной машины продаж</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+        
+        <!-- Тариф 1 -->
+        <div class="card-avoid-break bg-card border border-cardBorder rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Старт & Охваты</div>
+            <div class="font-display text-3xl font-black mb-1">50 000 ₽</div>
+            <div class="text-xs text-slate-500 mb-6">в месяц</div>
+            
+            <p class="text-slate-300 text-xs leading-relaxed mb-6">
+              Быстрый запуск регулярного конвейера коротких виральных видео для набора подписчиков и тестирования тем.
+            </p>
+
+            <ul class="space-y-3 text-xs text-slate-300 border-t border-cardBorder pt-6">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-lime-400 shrink-0 mt-0.5"></i>
+                <span><b>20 вирусных роликов в месяц</b> (по 5 в неделю)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-lime-400 shrink-0 mt-0.5"></i>
+                <span>Длительность: короткие видео <b>от 7 до 20 секунд</b></span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-lime-400 shrink-0 mt-0.5"></i>
+                <span>Написание сценариев с упором на пользу и репосты</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-lime-400 shrink-0 mt-0.5"></i>
+                <span>Динамичный легкий монтаж (текст + трендовая музыка)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-8 mt-6 border-t border-cardBorder/50 text-center">
+            <span class="text-xs text-slate-400">Фокус: <b>Охваты и новая аудитория</b></span>
+          </div>
+        </div>
+
+        <!-- Тариф 2 (ХИТ - 150 000 руб) -->
+        <div class="card-avoid-break bg-card border-2 border-lime-400 rounded-3xl p-8 flex flex-col justify-between relative glow-lime">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-lime-400 text-black font-display font-black text-xs uppercase tracking-wider">
+            Рекомендуемый 🔥
+          </div>
+
+          <div>
+            <div class="text-xs font-bold text-lime-400 uppercase tracking-wider mb-2">Воронка & Лидогенерация</div>
+            <div class="font-display text-3xl font-black mb-1">150 000 ₽</div>
+            <div class="text-xs text-slate-500 mb-6">в месяц</div>
+            
+            <p class="text-slate-300 text-xs leading-relaxed mb-6">
+              Комплексный инструмент для привлечения охватов и их мгновенной конверсии в заявки на покупку объектов.
+            </p>
+
+            <ul class="space-y-3 text-xs text-slate-300 border-t border-cardBorder pt-6">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-lime-400 shrink-0 mt-0.5"></i>
+                <span><b>Весь Пакет 1</b> (20 коротких вирусных видео на охваты)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-lime-400 shrink-0 mt-0.5"></i>
+                <span><b>+ 4 ролика со сложным профессиональным монтажом</b> под прямые продажи (дом в Яр / Москва)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-lime-400 shrink-0 mt-0.5"></i>
+                <span><b>Подробные ТЗ на съемку</b> качественных исходников</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-lime-400 shrink-0 mt-0.5"></i>
+                <span><b>Консалтинг по Stories:</b> темы, смысловые линии и прогревы</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-lime-400 shrink-0 mt-0.5"></i>
+                <span><b>Автоворонка в Direct:</b> выдача подборок и каталогов</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-8 mt-6 border-t border-cardBorder/50 text-center">
+            <span class="text-xs text-lime-400 font-semibold">Фокус: <b>Охваты + Заявки на объекты</b></span>
+          </div>
+        </div>
+
+        <!-- Тариф 3 -->
+        <div class="card-avoid-break bg-card border border-cardBorder rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Генератор Лидов & VIP</div>
+            <div class="font-display text-3xl font-black mb-1">300 000 ₽</div>
+            <div class="text-xs text-slate-500 mb-6">в месяц</div>
+            
+            <p class="text-slate-300 text-xs leading-relaxed mb-6">
+              Полная передача продаж и личного бренда на аутсорс. Ежедневное ведение за руку для сделок на высокие чеки.
+            </p>
+
+            <ul class="space-y-3 text-xs text-slate-300 border-t border-cardBorder pt-6">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-lime-400 shrink-0 mt-0.5"></i>
+                <span><b>Пакет 1 + Пакет 2 в полном объеме</b></span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-lime-400 shrink-0 mt-0.5"></i>
+                <span><b>Пошаговые сценарии Stories НА КАЖДЫЙ ДЕНЬ</b></span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-lime-400 shrink-0 mt-0.5"></i>
+                <span><b>Сквозная система лидогенерации</b> и чат-боты фильтрации</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-lime-400 shrink-0 mt-0.5"></i>
+                <span><b>Личное продюсирование 24/7</b> и регулярная докрутка офферов</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-8 mt-6 border-t border-cardBorder/50 text-center">
+            <span class="text-xs text-slate-400">Фокус: <b>Автономная машина продаж</b></span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 4. НАГЛЯДНАЯ ТАБЛИЦА ================= -->
+    <section class="card-avoid-break bg-card/30 border border-cardBorder rounded-3xl p-8 overflow-hidden">
+      <h3 class="font-display text-xl font-bold uppercase mb-6 text-center sm:text-left">Сводная таблица сравнения</h3>
+      
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs sm:text-sm">
+          <thead>
+            <tr class="border-b border-cardBorder text-slate-400 uppercase text-[11px] tracking-wider">
+              <th class="py-3 px-4">Опция</th>
+              <th class="py-3 px-4 text-center">Базовый (50к)</th>
+              <th class="py-3 px-4 text-center text-lime-400">Оптимум (150к)</th>
+              <th class="py-3 px-4 text-center">VIP (300к)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-cardBorder/50 text-slate-300">
+            <tr>
+              <td class="py-3.5 px-4 font-medium">Вирусные Reels (7–20 сек, 5 в нед)</td>
+              <td class="py-3.5 px-4 text-center text-lime-400 font-bold">20 шт</td>
+              <td class="py-3.5 px-4 text-center text-lime-400 font-bold">20 шт</td>
+              <td class="py-3.5 px-4 text-center text-lime-400 font-bold">20 шт</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-medium">Сложные продающие ролики с киномонтажом</td>
+              <td class="py-3.5 px-4 text-center text-slate-600">—</td>
+              <td class="py-3.5 px-4 text-center text-lime-400 font-bold">4 шт</td>
+              <td class="py-3.5 px-4 text-center text-lime-400 font-bold">4 шт</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-medium">ТЗ на съемку качественных исходников</td>
+              <td class="py-3.5 px-4 text-center text-slate-600">—</td>
+              <td class="py-3.5 px-4 text-center text-lime-400 font-bold">Да</td>
+              <td class="py-3.5 px-4 text-center text-lime-400 font-bold">Да</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-medium">Консалтинг по Stories (темы и прогревы)</td>
+              <td class="py-3.5 px-4 text-center text-slate-600">—</td>
+              <td class="py-3.5 px-4 text-center text-lime-400 font-bold">Да</td>
+              <td class="py-3.5 px-4 text-center text-slate-400">Готовые сценарии</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-medium">Пошаговые сценарии Stories на каждый день</td>
+              <td class="py-3.5 px-4 text-center text-slate-600">—</td>
+              <td class="py-3.5 px-4 text-center text-slate-600">—</td>
+              <td class="py-3.5 px-4 text-center text-lime-400 font-bold">Ежедневно</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-medium">Автоворонка и выдача материалов в Direct</td>
+              <td class="py-3.5 px-4 text-center text-slate-600">—</td>
+              <td class="py-3.5 px-4 text-center text-lime-400 font-bold">Да</td>
+              <td class="py-3.5 px-4 text-center text-lime-400 font-bold">Да</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-medium">Сквозные чат-боты фильтрации инвесторов</td>
+              <td class="py-3.5 px-4 text-center text-slate-600">—</td>
+              <td class="py-3.5 px-4 text-center text-slate-600">—</td>
+              <td class="py-3.5 px-4 text-center text-lime-400 font-bold">Под ключ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ================= 5. ШАГИ ДЛЯ СТАРТА ================= -->
+    <section class="card-avoid-break bg-card border border-cardBorder rounded-3xl p-8 sm:p-12 text-center">
+      <span class="text-lime-400 font-semibold text-xs tracking-wider uppercase">Простой старт</span>
+      <h2 class="font-display text-2xl sm:text-3xl font-bold uppercase mt-2 mb-8">Как мы начинаем работу</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left max-w-4xl mx-auto mb-10">
+        <div class="p-5 rounded-2xl bg-dark/60 border border-cardBorder">
+          <div class="text-lime-400 font-display font-bold text-lg mb-2">Шаг 1</div>
+          <div class="text-xs text-slate-300">Выбираем удобный формат работы (50к / 150к / 300к)</div>
+        </div>
+        <div class="p-5 rounded-2xl bg-dark/60 border border-cardBorder">
+          <div class="text-lime-400 font-display font-bold text-lg mb-2">Шаг 2</div>
+          <div class="text-xs text-slate-300">Создаем рабочий чат и открываем общую папку на диске для исходников</div>
+        </div>
+        <div class="p-5 rounded-2xl bg-dark/60 border border-cardBorder">
+          <div class="text-lime-400 font-display font-bold text-lg mb-2">Шаг 3</div>
+          <div class="text-xs text-slate-300">Утверждаем первый пул сценариев и запускаем конвейер публикаций</div>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-cardBorder max-w-md mx-auto">
+        <p class="text-slate-300 text-sm mb-4">Елена, какой формат вам сейчас ближе по темпу и задачам?</p>
+        <div class="text-xs text-slate-500 font-display tracking-wide uppercase">С уважением, Егор • ONETAKE MEDIA</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Инициализация иконок -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
